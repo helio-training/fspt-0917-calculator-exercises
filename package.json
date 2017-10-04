@@ -1,0 +1,31 @@
+{
+  "name": "fspt-0917-calculator-exercises",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/helio-training/fspt-0917-calculator-exercises",
+  "author": "Tyler Garlick<tgarlick@heliotraining.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "ava test"
+  },
+  "dependencies": {
+    "ava": "^0.22.0",
+    "babel-polyfill": "^6.26.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-latest": "^6.24.1"
+  },
+  "ava": {
+    "concurrency": 5,
+    "failFast": true,
+    "failWithoutAssertions": false,
+    "tap": true,
+    "powerAssert": false,
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
+  }
+}
